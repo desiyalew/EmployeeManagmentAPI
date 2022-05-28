@@ -1,0 +1,33 @@
+<!-- form handling-->
+<form action='/api/employees' method="post" id="add_employee">
+    <div class="new_employee">
+        <div class="form-group">
+            <label for="Name" class="text-light">Name</label>
+            <input type="hidden" name="id" value="">
+            <input style='width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;' type="text" name="name" value="" placeholder="Enter Employee name">
+        </div>
+        <div class="form-group">
+         <label for="Date_of_birth" class="text-light">Date of Birth</label>
+         <input style='width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;' type="datetime-local" name="birth_date" value="" placeholder="Enter Date_of_birth">
+
+     <div class="form-group">
+         <label for="gender" class="text-light">Gender</label>
+         <div class="radio inline">
+             <input type="radio" id="radio-2" name="gender" value="Male">
+             <label for="radio-2" class="radio-label">Male</label>
+         </div>
+         <div class="radio inline">
+             <input type="radio" id="radio-3" name="gender" value="Female">
+             <label for="radio-3" class="radio-label">Female</label>
+         </div>
+     </div>
+     <div class="form-group">
+         <label for="Salary" class="text-light">Salary</label>
+         <input style='width: 100%;padding: 12px 20px;margin: 8px 0;display: inline-block;border: 1px solid #ccc;border-radius: 4px;box-sizing: border-box;' type="number" name="salary" value="" placeholder="Enter Employee Salary">
+     </div>
+    </div>
+    <div class="form-group">
+     <button type="submit" class="btn text-dark update">Save</button>
+ </div>
+ </div>
+  </form>

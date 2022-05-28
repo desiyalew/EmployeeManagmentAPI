@@ -1,0 +1,38 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+<!--Main Site of the project-->
+
+<main id="site-main">
+    <div class="container">
+       <div class="box-nav d-flex-justify-between">
+           <a href="/add_employee" class="border-shadow">
+               <span class="text-gradient">Add Employee  <i class="fa-solid fa-person-circle-plus"></i></span>
+           </a>
+       </div>
+     </div>
+
+     <!-- form handling-->
+     <form action="/" method="post">
+         <table class="table">
+             <thead class="thead-dark">
+                 <tr>
+                     <th>Employee ID</th>
+                     <th>Employee Name</th>
+                     <th>Employee Date of Birth</th>
+                     <th>Employee Gender</th>
+                     <th>Employee Salary</th>
+                     <th>Action</th>
+                 </tr>
+             </thead>
+             <tbody>
+                <%-include('include/_show')%>
+             </tbody>
+         </table>
+     </form>
+   
+</main>
+<!--/Main Site of the project-->
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--/include footer-->
